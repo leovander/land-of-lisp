@@ -8,99 +8,99 @@
     (- (+ n n) (+ n n)))
 
 (eq 'fooo 'FoOo)
-; T
+;; T
 
 (+ 1 1.0)
-; 2.0
+;; 2.0
 
 (expt 53 53)
-; 24356848165022712132477606520104725518533453128685640844505130879576720609150223301256150373
+;; 24356848165022712132477606520104725518533453128685640844505130879576720609150223301256150373
 
 (/ 4 6)
-; 2/3
+;; 2/3
 
 (/ 4.0 6)
-; 0.6666667
+;; 0.6666667
 
 (princ "Tutti Frutti")
-; Tutti Frutti
-; "Tutti Frutti"
+;; Tutti Frutti
+;; "Tutti Frutti"
 
 (princ "He yelled \"Stop that thief!\" from the busy street.")
-; He yelled "Stop that thief!" from the busy street.
-; "He yelled \"Stop that thief!\" from the busy street."
+;; He yelled "Stop that thief!" from the busy street.
+;; "He yelled \"Stop that thief!\" from the busy street."
 
 (expt 2 3)
-; 8
+;; 8
 
 (expt 2 (+ 3 4))
-; 128
+;; 128
 
 '(expt 2 3)
-; (EXPT 2 3)
+;; (EXPT 2 3)
 
 (cons 'chicken 'cat)
-; (CHICKEN . CAT)
+;; (CHICKEN . CAT)
 
 (cons 'chicken 'nil)
-; (CHICKEN)
+;; (CHICKEN)
 
 (cons 'chicken ())
-; (CHICKEN)
+;; (CHICKEN)
 
 (cons 'pork '(beef chicken))
-; (PORK BEEF CHICKEN)
+;; (PORK BEEF CHICKEN)
 
 (cons 'beef (cons 'chicken ()))
-; (BEEF CHICKEN)
+;; (BEEF CHICKEN)
 
 (cons 'pork (cons 'beef (cons 'chicken ())))
-; (PORK BEEF CHICKEN)
+;; (PORK BEEF CHICKEN)
 
 (car '(pork beef chicken))
-; PORK
+;; PORK
 
 (cdr '(pork beef chicken))
-; (BEEF CHICKEN)
+;; (BEEF CHICKEN)
 
 (car '(beef chicken))
-; BEEF
+;; BEEF
 
 (car (cdr '(pork beef chicken)))
-; BEEF
+;; BEEF
 
 (cadr '(pork beef chicken))
-; BEEF
+;; BEEF
 
 (list 'pork 'beef 'chicken)
-; (PORK BEEF CHICKEN)
+;; (PORK BEEF CHICKEN)
 
 '(cat (duck bat) ant)
-; (CAT (DUCK BAT) ANT)
+;; (CAT (DUCK BAT) ANT)
 
 (car '((peas carrots tomatoes) (pork beef chicken)))
-; (PEAS CARROTS TOMATOES)
+;; (PEAS CARROTS TOMATOES)
 
 (cdr '(peas carrots tomatoes))
-; (CARROTS TOMATOES)
+;; (CARROTS TOMATOES)
 
 (cdr (car '((peas carrots tomatoes) (pork beef chicken))))
-; (CARROTS TOMATOES)
+;; (CARROTS TOMATOES)
 
 (cdar '((peas carrots tomatoes) (pork beef chicken)))
-; (CARROTS TOMATOES)
+;; (CARROTS TOMATOES)
 
 (cons (cons 'peas (cons 'carrots (cons 'tomatoes ()))) (cons (cons 'pork (cons 'beef (cons 'chicken ()))) ()))
-; ((PEAS CARROTS TOMATOES) (PORK BEEF CHICKEN))
+;; ((PEAS CARROTS TOMATOES) (PORK BEEF CHICKEN))
 
 (cddr '((peas carrots tomatoes) (pork beef chicken) duck))
-; (DUCK)
+;; (DUCK)
 
 (caddr '((peas carrots tomatoes) (pork beef chicken) duck))
-; DUCK
+;; DUCK
 
 (cddar '((peas carrots tomatoes) (pork beef chicken) duck))
-; (TOMATOES)
+;; (TOMATOES)
 
 (cadadr '((peas carrots tomatoes) (pork beef chicken) duck))
-; BEEF
+;; BEEF
